@@ -1,0 +1,19 @@
+{
+  "name": "ndcopy-ndpaste",
+  "version": "1.0.0",
+  "description": "Commandline tools for copying and pasting text to and from the clipboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@masesisaac",
+  "license": "MIT",
+  "dependencies": {
+    "copy-paste": "^1.3.0",
+    "get-stdin": "^6.0.0"
+  },
+  "bin": {
+    "ndcopy": "./copy.js",
+    "ndpaste": "./paste.js"
+  }
+}
