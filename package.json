@@ -4,16 +4,28 @@
   "description": "Commandline tools for copying and pasting text to and from the clipboard",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "lint": "eslint .",
+    "pretest": "npm run lint"
   },
   "author": "@masesisaac",
   "license": "MIT",
   "dependencies": {
-    "copy-paste": "^1.3.0",
+    "clipboardy": "^1.2.3",
+    "eslint-plugin-mocha": "^5.2.0",
     "get-stdin": "^6.0.0"
   },
   "bin": {
-    "ndcopy": "./copy.js",
-    "ndpaste": "./paste.js"
+    "ndcopy": "./bin/ndcopy.js",
+    "ndpaste": "./bin/ndpaste.js"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "mocha": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/masesisaac/ndcopy-ndpaste.git"
   }
 }
