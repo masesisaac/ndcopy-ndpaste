@@ -11,7 +11,7 @@ Inspired by mac osx's pbcopy and pbpaste
 
 ### ndcopy
 
-Takes standard input and places it in the clipboard buffer.
+Takes standard input and places it in the clipboard.
 
 ```$ ndcopy "some cool text"```
 
