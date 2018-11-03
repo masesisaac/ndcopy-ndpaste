@@ -21,8 +21,7 @@
   },
   "devDependencies": {
     "eslint": "^5.8.0",
-    "eslint-config-strongloop": "^2.1.0",
-    "mocha": "^5.2.0"
+    "eslint-config-strongloop": "^2.1.0"
   },
   "repository": {
     "type": "git",
