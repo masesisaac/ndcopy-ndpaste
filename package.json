@@ -36,6 +36,12 @@
     "clipboard",
     "copy-paste",
     "ndcopy",
-    "ndpaste"
+    "ndpaste",
+    "read",
+    "write",
+    "clip",
+    "xclip",
+    "xsel",
+    "pasteboard"
   ]
 }
