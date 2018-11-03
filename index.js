@@ -3,7 +3,7 @@
 const clipboardy = require('clipboardy');
 const getStdin = require('get-stdin');
 
-const copy = async(str, cb) => {
+const copy = async(str, cb = () => {}) => {
   let content;
   let stdin = await getStdin();
   content = str || stdin || process.argv[2];
