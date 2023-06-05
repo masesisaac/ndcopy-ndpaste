@@ -1,3 +1,4 @@
 #!/usr/bin/env node
 'use strict';
-require('../index').paste();
+import { paste } from  '../index.js';
+paste();

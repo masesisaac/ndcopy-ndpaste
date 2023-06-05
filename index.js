@@ -1,7 +1,7 @@
 'use strict';
 
-const clipboardy = require('clipboardy');
-const getStdin = require('get-stdin');
+import clipboardy from 'clipboardy';
+import getStdin from 'get-stdin';
 
 const copy = async(str, cb = () => {}) => {
   let content;
@@ -12,8 +12,8 @@ const copy = async(str, cb = () => {}) => {
     cb(content);
     process.exit(0);
   } else {
-    console.log('nothing to copy');
-    cb('nothing to copy');
+    console.log('Nothing to copy');
+    cb('Nothing to copy');
     process.exit(0);
   }
 };
@@ -24,4 +24,4 @@ const paste = () => {
   return content;
 };
 
-module.exports = {copy, paste};
+export {copy, paste};
